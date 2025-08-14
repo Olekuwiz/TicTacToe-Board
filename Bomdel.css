@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Center the Tic Tac Toe board */
+.tic-tac-toe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse; /* Remove spacing between cells */
+    width: 100px; /* Total width of the table */
+    height: 100px; /* Total height of the table */
+}
+
+/* Style each cell */
+td {
+    width: 100px; /* Each cell takes one-third of the row */
+    height: 100px; /* Each cell takes one-third of the column */
+    border: 2px solid black; /* Add borders to form the grid */
+    box-sizing: border-box; /* Include padding and borders in the width and height */
+}
+
+/* Remove top border from the first row */
+tr:first-child td {
+    border-top: none;
+}
+
+/* Remove bottom border from the last row */
+tr:last-child td {
+    border-bottom: none;
+}
+/* Remove left border on first column */
+td:first-child {
+    border-left: none;
+}
+
+/* Remove right border on last column */
+td:last-child {
+    border-right: none;
+}
+/*p {
+width: 50%;
+    border: 2px solid blue;
+
+    padding-left: 40px;
+    /*margin: 100px;*/
+    /*margin-top: 500px;
+    margin: 20px 40px 500px 100px;*/
+    /*margin: 0 auto 0 auto;*/
+    /*margin: 0 auto;
+margin: 50px 20px;
+
